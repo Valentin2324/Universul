@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" />
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.15.4/css/fontawesome.min.css">
+
+  <title>Space Website</title>
+</head>
+<body>
+
+  <section class="sub-header-4">
+
+    <nav>
+      <a href="index.html"></a>
+      <i class='fa-solid fa-earth-europe fa-4x' style='color: red'></i>
+
+      <div class="nav-links" id="navLinks">
+        <i class="fa fa-times" onclick="hideMenu()"></i>
+        <ul>
+          <li><a href="index.html">HOME</a></li>
+          <li><a href="despre.html">DESPRE</a></li>
+          <li><a href="planete.html">PLANETE</a></li>
+          <li><a href="curiozitati.html">CURIOZITATI</a></li>
+          <li><a href="contact.html">CONTACTE</a></li>
+        </ul>
+
+      </div>
+      <i class="fa fa-bars" onclick="showMenu()"></i>
+    </nav>
+<h1>Contacteaza-ne</h1>
+
+  </section>
+
+<!----- contact us ------>
+
+<section class="location">
+
+  <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d22061.46069625347!2d28.186272318375195!3d46.27641196359619!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40b6052fbcfdd8e9%3A0x25afae578cebc736!2sCantemir%2C%20Moldova!5e0!3m2!1sro!2s!4v1647174676769!5m2!1sro!2s" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+
+</section>
+
+<section class="contact-us">
+  <div class="row">
+    <div class="contact-col">
+      <div>
+        <i class="fa-solid fa-house"></i>
+        <span>
+          <h5>Moldova-Orasul Cantemir</h5>
+          <p>Gimnaziul Mihai Eminescu</p>
+        </span>
+      </div>
+      <div>
+        <i class="fa-solid fa-phone"></i>
+        <span>
+          <h5>068 200 110</h5>
+          <p>Luni pana vineri, 10:00 - 18:00</p>
+        </span>
+      </div>
+      <div>
+        <i class="fa-solid fa-envelope"></i>
+        <span>
+          <h5>tvcezar327@gmail.com</h5>
+          <p>Trimiteți-ne un e-mail la interogarea dvs.</p>
+        </span>
+      </div>
+    </div>
+    <div class="contact-col">
+      <form action="form-handler.php" method="post">
+        <input type="text" name="nume" placeholder="Nume" required>
+        <input type="email" name="email" placeholder="Email" required>
+        <input type="text" name="subiect" placeholder="Subiect" required>
+        <textarea rows="8" name="mesaj" placeholder="Mesaj" required></textarea>
+        <button type="submit" class="hero-btn red-btn">Trimiteți-ne mesaj</button>
+      </form>
+    </div>
+  </div>
+</section>
+
+<!-- --- Footer ------->
+
+<section class="footer">
+  <h4>DESPRE</h4>
+  <p>Aici puteti gasi retelele noastre de socializare.</p>
+  <div class="icons">
+    <i class="fa-brands fa-facebook-f"></i>
+    <i class="fa-brands fa-twitter"></i>
+    <i class="fa-brands fa-instagram"></i>
+    <i class="fa-brands fa-linkedin-in"></i>
+  </div>
+</section>
+
+
+
+
+
+
+
+
+<!------JavaScript for Toggle Menu------>
+<script>
+
+  var navLinks = document.getElementById("navLinks");
+
+  function showMenu() {
+    navLinks.style.right = "0";
+  }
+  function hideMenu() {
+    navLinks.style.right = "-200px";
+  }
+
+</script>
+
+
+
+
+
+</body>
+</html>

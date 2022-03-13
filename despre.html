@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" />
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.15.4/css/fontawesome.min.css">
+
+  <title>Space Website</title>
+</head>
+<body>
+
+  <section class="sub-header">
+
+    <nav>
+      <a href="index.html"></a>
+      <i class='fa-solid fa-earth-europe fa-4x' style='color: red'></i>
+
+      <div class="nav-links" id="navLinks">
+        <i class="fa fa-times" onclick="hideMenu()"></i>
+        <ul>
+          <li><a href="index.html">HOME</a></li>
+          <li><a href="despre.html">DESPRE</a></li>
+          <li><a href="planete.html">PLANETE</a></li>
+          <li><a href="curiozitati.html">CURIOZITATI</a></li>
+          <li><a href="contact.html">CONTACTE</a></li>
+        </ul>
+
+      </div>
+      <i class="fa fa-bars" onclick="showMenu()"></i>
+    </nav>
+<h1>Despre noi</h1>
+
+  </section>
+
+<!----- about us content ------>
+<section class="about-us">
+
+  <div class="row">
+    <div class="about-col">
+      <h1>Suntem cercetatori si fani ai Spatiului!</h1>
+      <p>Spațiul Cosmic este enorm și numărul de fenomene neobișnuite pe care le poți întâlni aici este extraordinar de mare. Tehnologiile noastre se tot dezvoltă și datorită acestui fapt oamenii de știință pot progresa și descoperi încă mai multe adevăruri despre Univers și, de asemenea, pot reînnoi teoriile vechi. Încă mai uimitor este faptul că până și azi, cel mai misterios și complex obiect din Univers se află chiar aici, pe planeta Pământ, cu mult mai aproape decât v-ați fi putut închipui.</p>
+      <a href="" class="hero-btn red-btn">EXPLOREAZA</a>
+    </div>
+
+    <div class="about-col">
+      <img src="images/banner3.jpg">
+    </div>
+  </div>
+
+</section>
+
+
+<!-- --- Footer ------->
+
+<section class="footer">
+  <h4>DESPRE</h4>
+  <p>Aici puteti gasi retelele noastre de socializare.</p>
+  <div class="icons">
+    <i class="fa-brands fa-facebook-f"></i>
+    <i class="fa-brands fa-twitter"></i>
+    <i class="fa-brands fa-instagram"></i>
+    <i class="fa-brands fa-linkedin-in"></i>
+  </div>
+</section>
+
+
+
+
+
+
+
+
+<!------JavaScript for Toggle Menu------>
+<script>
+
+  var navLinks = document.getElementById("navLinks");
+
+  function showMenu() {
+    navLinks.style.right = "0";
+  }
+  function hideMenu() {
+    navLinks.style.right = "-200px";
+  }
+
+</script>
+
+
+
+
+
+</body>
+</html>

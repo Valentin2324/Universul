@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" />
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.15.4/css/fontawesome.min.css">
+
+  <title>Space Website</title>
+</head>
+<body>
+
+  <section class="sub-header-2">
+
+    <nav>
+      <a href="index.html"></a>
+      <i class='fa-solid fa-earth-europe fa-4x' style='color: red'></i>
+
+      <div class="nav-links" id="navLinks">
+        <i class="fa fa-times" onclick="hideMenu()"></i>
+        <ul>
+          <li><a href="index.html">HOME</a></li>
+          <li><a href="despre.html">DESPRE</a></li>
+          <li><a href="planete.html">PLANETE</a></li>
+          <li><a href="curiozitati.html">CURIOZITATI</a></li>
+          <li><a href="contact.html">CONTACTE</a></li>
+        </ul>
+
+      </div>
+      <i class="fa fa-bars" onclick="showMenu()"></i>
+    </nav>
+<h1>Planete Din Univers</h1>
+  </section>
+
+<!------ Course -------->
+
+<section class="course">
+  <h1>Top Planete Noi Descoperite</h1>
+  <p>Planetele au fost descoperit cu telescopul spațial CoRoT al agenției spațiale franceze CNES, utilizat pentru descoperirea planetelor din afara sistemului nostru solar (numite exoplanete).</p>
+
+  <div class="row">
+    <div class="course-col">
+      <h3>Kepler-186f</h3>
+      <p>Aceasta este prima planetă cu o mărime asemănătoare cu cea a Pământului și care se află în zona locuibilă pe care oamenii de știință au reușit să o identifice. Această planetă se află la aproximativ 500 de ani-lumină de Terra.
+        Studiile au indicat faptul că Kepler-186f este cu 10% mai mare ca Terra și că este, cel mai probabil, solidă. Trebuie precizat faptul că această planetă se află în constelația Lebedei și că face parte dintr-un sistem format dintr-o stea pitică și alte patru planete.</p>
+    </div>
+    <div class="course-col">
+      <h3>Gliese 581g</h3>
+      <p>Primele dovezi ale existenței acestei planete au fost oferite în jurul anului 2010, confirmarea acestei descoperiri având nevoie de mai mulți ani. Cercetătorii de la Universitatea Puerto Rico consideră faptul că Gliese 581g este una dintre planetele care au șansele cele mai mari să susțină viața extraterestră.
+        Astronomii explică faptul că Gliese 581g se află în constelația Balanței și că orbitează steaua Gliese 581, aflată la doar 20 de ani-lumină. Aceasta este cea de-a patra planetă de la soare și are șanse mari să prezinte apă lichidă pe suprafața sa.
+      </p>
+    </div>
+    <div class="course-col">
+      <h3>Tau Ceti f</h3>
+      <p>Această planetă se află la marginea zonei locuibile din jurul stelei sale, aflate în constelația Balena. Steaua pe care o orbitează are 78% din masa Soarelui nostru și se află la 12 ani-lumină de acesta.
+        Tau Ceti f face parte dintr-un sistem în care se află cinci planete, din care aceasta se află în zona locuibilă. Dat fiind faptul că în sistemul acesta solar se află o cantitate mare de praf și alte materiale, există posibilitatea ca viața să fie pusă în pericol de impacturile cu obiectele spațiale.</p>
+    </div>
+  </div>
+
+</section>
+
+<!------- facilities ------->
+
+<section class="facilities">
+  <h1>HD 85512b</h1>
+  <p>Aceasta planeta este una destul de recent descoperita!</p>
+
+  <div class="row">
+    <div class="facilities-col">
+      <img src="images/hd.jpg">
+      <h3>Descoperirea</h3>
+      <p>Descoperirea acestei exoplanete a avut loc în anul 2011, la pachet cu alte 50 de planete descoperite de către observatorul HARPS din Chile. Datele oferite de către instrumente indică faptul că HD 85512b are 3,6 mase terestre și că se află la 35 de ani-lumină de Terra.
+      </p>
+    </div>
+    <div class="facilities-col">
+      <img src="images/h2.png">
+      <h3>Exista Viata?</h3>
+      <p>HD 85512b este o planetă solidă și, după cum indică datele, se află la marginea zonei locuibile a stelei sale, ceea ce înseamnă că ar putea permite existența apei lichide, necesare vieții așa cum o știm.</p>
+    </div>
+    <div class="facilities-col">
+      <img src="images/hd.jpg">
+      <h3>Cercetari</h3>
+      <p>Cercetătorii au stabilit faptul că această planetă are o atmosferă, dar au dubii legate de natura acesteia. Mai exact, este posibil ca această planetă să poată avea temperaturii medii similare cu cele de pe Terra sau ar putea fi extreme, precum cele de pe Venus.</p>
+    </div>
+  </div>
+
+</section>
+
+
+<!-- --- Footer ------->
+
+<section class="footer">
+  <h4>DESPRE</h4>
+  <p>Aici puteti gasi retelele noastre de socializare.</p>
+  <div class="icons">
+    <i class="fa-brands fa-facebook-f"></i>
+    <i class="fa-brands fa-twitter"></i>
+    <i class="fa-brands fa-instagram"></i>
+    <i class="fa-brands fa-linkedin-in"></i>
+  </div>
+</section>
+
+
+
+
+
+
+
+
+<!------JavaScript for Toggle Menu------>
+<script>
+
+  var navLinks = document.getElementById("navLinks");
+
+  function showMenu() {
+    navLinks.style.right = "0";
+  }
+  function hideMenu() {
+    navLinks.style.right = "-200px";
+  }
+
+</script>
+
+
+
+
+
+</body>
+</html>
